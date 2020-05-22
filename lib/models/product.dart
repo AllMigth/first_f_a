@@ -6,7 +6,7 @@ class Product{
   Product({this.name, this.description, this.backgroundColor, this.buttonText, this.imagePath, this.price, this.productInfo, this.cantidad});
 }
 
-final Product Ranas = Product(
+final Product pixelStand = Product(
   imagePath: "assets/images/hayaca.png",
   name: 'Delicias del Ecuador',
   description: 'Alimentos no perecibles',

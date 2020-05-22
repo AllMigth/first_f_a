@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-//import ‘package:url_launcher/url_launcher.dart’;
+import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
+import 'package:puertoquito/models/product.dart';
 
 class RedButton extends StatelessWidget {
   final String buttonText;
@@ -9,7 +10,6 @@ class RedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RaisedButton(
-      onPressed: () {} ,
       padding: const EdgeInsets.symmetric(horizontal: 96),
       textColor: Colors.white,
       color: Color(0xFFDA1D21),
@@ -21,6 +21,12 @@ class RedButton extends StatelessWidget {
           Radius.circular(30),
         )
       ),
+      onPressed: sendMsg (),
     );
   }
+}
+
+sendMsg(bussines.number, bussines.msg){
+  FlutterOpenWhatsapp.sendSingleMessage(
+      "593978958201","Hello dude, i'm wanna make bussines with you");
 }

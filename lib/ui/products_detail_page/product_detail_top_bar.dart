@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:puertoquito/models/product.dart';
-import 'package:puertoquito/ui/products_detail_page/contact_content_widget.dart';
 import 'package:puertoquito/widgets/fade_page_route.dart';
 
 class ProductDetailTopBar extends StatelessWidget {
 
-  final Product product;
-
-  const ProductDetailTopBar({Key key, this.product}) : super(key: key);
+  const ProductDetailTopBar({Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(

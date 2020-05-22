@@ -13,15 +13,13 @@ class ProductsListingPage extends StatelessWidget{
       appBar: AppBar(
           title: Text(
             'Emprendedores Pichincha',
-            style: GoogleFonts.aBeeZee(),
           ),
           elevation: 50,
-          backgroundColor: Colors.white30,
+          backgroundColor: Colors.deepOrange[400],
           leading: Padding(
             padding: const EdgeInsets.all(12),
             child: Image.asset("assets/images/softyon.png"),
           ),
-
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(15),

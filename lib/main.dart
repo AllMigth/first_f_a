@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:puertoquito/models/product.dart';
-import 'ui/products_detail_page/product_detail_page.dart';
 import 'ui/products_listing_page/products_listing_page.dart';
+import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-void main() =>  runApp(MyApp());
+void main(){
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.dumpErrorToConsole(details);
+    if (kReleaseMode)
+      exit(1);
+  };
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget{
   @override
@@ -12,7 +19,9 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'OpenSans',
+        textTheme: GoogleFonts.aBeeZeeTextTheme(
+          Theme.of(context).textTheme,
+       ),
         scaffoldBackgroundColor: Colors.white,
         primaryColor: Colors.white,
       ),

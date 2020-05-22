@@ -36,7 +36,7 @@ class VerticaProductItemWidget extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
                   color: Color(0xFF383843),
-                  fontSize: 14,
+                  fontSize: 16,
                   ),
               ),
               Text(
@@ -44,7 +44,7 @@ class VerticaProductItemWidget extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w800,
                   color: Color(0xFF383843),
-                  fontSize: 8,
+                  fontSize: 9,
                   ),
               ),
           ],

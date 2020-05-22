@@ -19,7 +19,8 @@ class RightImageProductItemWidget extends StatelessWidget {
     return GestureDetector(
       onTap: (){
         Navigator.push(context, FadePageRoute(widget: ProductDetailPage(
-              product: product)),
+              product: product)
+        ),
         );
       },
       child: Container(
@@ -34,9 +35,11 @@ class RightImageProductItemWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  Text(product.name, style: TextStyle(
+                  Text(
+                    product.name,
+                    style: TextStyle(
                     fontSize: 18,
-                    fontWeight: FontWeight.w900,
+                    fontWeight: FontWeight.w800,
                   ),
                   ),
                   SizedBox(height: 10,),

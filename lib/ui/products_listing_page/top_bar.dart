@@ -7,7 +7,7 @@ class TopBar extends StatelessWidget{
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
         color: Color(0xFFE0E0E0),
-        borderRadius: BorderRadius.all(Radius.circular((30))),
+        borderRadius: BorderRadius.all(Radius.circular((50))),
       ),
       child: TextField(
         style: TextStyle(fontSize: 16, color: Colors.black),

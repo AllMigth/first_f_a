@@ -15,13 +15,13 @@ class BlueButton extends StatelessWidget {
         style: TextStyle(
           color: Colors.white,
           fontWeight: FontWeight.w600,
-          fontSize: 10
+          fontSize: 12
         ),
       ),
       color: Color(0xFF0000FF),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.all(
-            Radius.circular(20)),
+            Radius.circular(30)),
       ),
     );
   }
