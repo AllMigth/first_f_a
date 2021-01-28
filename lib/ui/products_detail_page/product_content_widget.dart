@@ -71,7 +71,7 @@ class ProductContentWidget extends StatelessWidget {
                   ),
               ),
 
-              Image.asset("assets/images/softyon.png", height: 20,),
+              Image.asset("assets/images/softyon.png", height: 20),
             ],
           ),
           SizedBox(
@@ -86,56 +86,33 @@ class ProductContentWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 20,
+            height: 5,
           ),
-//          Center(
-//            child: Row(
-//              mainAxisSize: MainAxisSize.min,
-//              //mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//              children: <Widget>[
-//                IconTitleWidget(imagePath: "assets/icons/create.png", title: "Create"),
-//                IconTitleWidget(imagePath: "assets/icons/connect.png", title: "Connect"),
-//                IconTitleWidget(imagePath: "assets/icons/discover.png", title: "Discover"),
-//              ],
-//            ),
-//          ),
+          
           Divider(
             color: Color(0xFFECECEC),
-            thickness: 1,
-            height: 25,
+            thickness: 3,
+            height: 10,
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               RedButton(
-                buttonText: "Comprar",
+                buttonText: "Visitar",
 
-              ),/*
-              _launchWhatsApp() async {
-              String phoneNumber = '+155488788788';
-              String message = 'hello from flutter app!!';
-              var whatsappUrl = "whatsapp://send?phone=$phoneNumber&text=$message";
-              if (await canLaunch(whatsappUrl)) {
-                await launch(whatsappUrl);
-              } else {
-                throw 'Could not launch $whatsappUrl';
-              }
-            }
-            1. CREAR UNA FUNCION CON ESO CODIGO
-            2. ASIGNAR LA FUNCION AL RED BUTTON
-              */
+              ),
               Spacer(),
-//                Material(
-//                  elevation: 4,
-//                  color: Colors.white,
-//                  shape: CircleBorder(),
-//                  child: Icon(
-//                      Icons.add,
-//                      size: 35,
-//                      color: Color(0xFF0000FF),
-//
-//                  ),
-//                ),
+               Material(
+                 elevation: 4,
+                 color: Colors.white,
+                 shape: CircleBorder(),
+                  child: Icon(
+                     Icons.add,
+                      size: 35,
+                      color: Color(0xFF0000FF),
+
+                  ),
+                ),
             ],
           )
         ],

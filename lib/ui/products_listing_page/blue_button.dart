@@ -9,11 +9,10 @@ class BlueButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      onPressed: () {},
       child: Text(
         product.buttonText,
         style: TextStyle(
-          color: Colors.white,
+          color: Color(0xFFF5F5F5),
           fontWeight: FontWeight.w600,
           fontSize: 12
         ),

@@ -12,7 +12,7 @@ class ProductsListingPage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
           title: Text(
-            'Emprendedores Pichincha',
+            'Puerto Quito',
           ),
           elevation: 50,
           backgroundColor: Colors.deepOrange[400],
@@ -20,14 +20,14 @@ class ProductsListingPage extends StatelessWidget{
             padding: const EdgeInsets.all(12),
             child: Image.asset("assets/images/softyon.png"),
           ),
-        actions: <Widget>[
+        /*actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(15),
             child: Icon(
                 Icons.menu
             )
           ),
-        ],
+        ],*/
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -46,9 +46,14 @@ class ProductsListingPage extends StatelessWidget{
               product1: pixelStand,
               product2: dayDreamview,
             ),
-            /*RedButton(
+            TwoProductsItemWidget(
+              screenHeight: screenHeight,
+              product1: pixelStand,
+              product2: dayDreamview,
+            ),
+            RedButton(
                 buttonText: "View all"
-            ),*/
+            ),
           ],
         ),
       ),

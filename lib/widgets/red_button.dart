@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_open_whatsapp/flutter_open_whatsapp.dart';
-import 'package:puertoquito/models/product.dart';
+
 
 class RedButton extends StatelessWidget {
   final String buttonText;
-  
+
   const RedButton({Key key, this.buttonText}) : super(key: key);
 
   @override
@@ -17,16 +16,9 @@ class RedButton extends StatelessWidget {
         buttonText.toUpperCase(),
       ),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-          Radius.circular(30),
-        )
-      ),
-      onPressed: sendMsg (),
+          borderRadius: BorderRadius.all(
+        Radius.circular(30),
+      )),
     );
   }
-}
-
-sendMsg(bussines.number, bussines.msg){
-  FlutterOpenWhatsapp.sendSingleMessage(
-      "593978958201","Hello dude, i'm wanna make bussines with you");
 }

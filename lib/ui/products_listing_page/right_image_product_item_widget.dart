@@ -48,15 +48,15 @@ class RightImageProductItemWidget extends StatelessWidget {
               ),
             ),
             Expanded(
-              flex: 5,
+              flex: 7,
               child: Stack(
                 children: <Widget>[
                   Positioned(
-                    bottom: -40,
-                    top: 50,
+                    bottom: -35,
+                    top: 0,
                     child: Transform.rotate(
-                      angle: -0.2,
-                        child: Image.asset(product.imagePath)),
+                    angle: 0,
+                    child: Image.asset(product.imagePath)),
                   ),
                 ],
               ),

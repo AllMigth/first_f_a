@@ -1,76 +1,94 @@
 import 'dart:ui';
 
-class Product{
-  final String name, description, buttonText, imagePath, price, productInfo, cantidad;
+class Product {
+  final String name,
+      description,
+      buttonText,
+      imagePath,
+      price,
+      productInfo,
+      cantidad;
   Color backgroundColor;
-  Product({this.name, this.description, this.backgroundColor, this.buttonText, this.imagePath, this.price, this.productInfo, this.cantidad});
+  Product(
+      {this.name,
+      this.description,
+      this.backgroundColor,
+      this.buttonText,
+      this.imagePath,
+      this.price,
+      this.productInfo,
+      this.cantidad});
 }
 
-final Product pixelStand = Product(
-  imagePath: "assets/images/hayaca.png",
-  name: 'Delicias del Ecuador',
-  description: 'Alimentos no perecibles',
-  buttonText: '',
-  backgroundColor: Color(0xFFF5F5F5),
-  price: '18',
-  productInfo: "Hayacas/Lasana  \n Deliciosos enlatados"
-      "listo para calentar y servir"
-);
+final Product fiestasJulio = Product(
+    imagePath: "assets/images/stadia.png",
+    name: 'Fiesta de la Virgen del Carmen',
+    description: 'Celebracion religiosa anual',
+    buttonText: '',
+    backgroundColor: Color(0xFFF5F5F5),
+    price: '18',
+    productInfo: "Desfiles, fuegos pirotecnicos, rifas de animales"
+        "danzas, orquesta, etc.");
 
-final Product dayDreamview = Product(
-  imagePath: "assets/images/hayaca.png",
-  name: 'Mascarillas N95',
-  description: 'Proteccion asegurada',
-  buttonText: '',
-  backgroundColor: Color(0xFFE0DDFF),
-  price: '3',
-  productInfo: "Desprotegerse ahora  \n es una mala opcion"
-      "Cuida de ti y los tuyos"
-  );
+final Product comidaTipica = Product(
+    imagePath: "assets/images/stadia.png",
+    name: 'Comida Tipica',
+    description: 'Alimentos no perecibles',
+    buttonText: '',
+    backgroundColor: Color(0xFFF5F5F5),
+    price: '18',
+    productInfo: "Hayacas/Lasana  \n Deliciosos enlatados"
+        "listo para calentar y servir");
 
-final Product pixel = Product(
-  imagePath: "assets/images/AYACA.png",
-  name: 'Alimentos no perecibles',
-  description: 'Alimentacion asegurada',
-  buttonText: 'Ver',
-  backgroundColor: Color(0xFFF5F5F5),
-  price: '2',
-  productInfo: "Majado/Hornado  \n Deliciosos enlatados"
-      "listo para calentar y servir"
-);
+final Product rutasDeAventura = Product(
+    imagePath: "assets/images/kayak.jpg",
+    name: 'Rutas de aventura',
+    description: 'Proteccion asegurada',
+    buttonText: '',
+    backgroundColor: Color(0xFFE0DDFF),
+    price: '3',
+    productInfo: "Disponible en Piedra de Vapor, clases, disponible para todo publico");
 
-final Product stadia = Product(
-  imagePath: "assets/images/LASANA.png",
-  name: 'Alimentos' ,
-  description: 'Nueva presentacion',
-  buttonText: 'Revisar',
-  backgroundColor: Color(0xFFFBE9EB),
-  price: '18',
-  cantidad: '24',
-  productInfo: "Lasana/Hornado \n enlatados de consumo rapido"
-    "para calentar y servir"
-);
+final Product lugaresTuristicos = Product(
+    imagePath: "assets/images/AYACA.png",
+    name: "Restauran D'Camy ",
+    description: 'Diversion asegurada',
+    buttonText: 'Ver',
+    backgroundColor: Color(0xFFF5F5F5),
+    price: '2',
+    productInfo: "Majado/Hornado  \n Deliciosos enlatados"
+        "listo para calentar y servir");
 
-final Product hornado = Product(
-    imagePath: "assets/images/HORNADO.png",
-    name: 'Hornado de pescado' ,
-    description: 'Alimentos enlatados',
+final Product balnearios = Product(
+    imagePath: "assets/images/balnearios.jpg",
+    name: 'Balnearios',
+    description: 'Nueva presentacion',
     buttonText: 'Revisar',
     backgroundColor: Color(0xFFFBE9EB),
     price: '18',
     cantidad: '24',
-    productInfo: "Enlatados \n"
-        "Listo para calentar y servir"
-);
+    productInfo: "Lasana/Hornado \n enlatados de consumo rapido"
+        "para calentar y servir");
 
-final Product majado = Product(
-    imagePath: "assets/images/MAJADO.png",
-    name: 'Majado de pescado' ,
-    description: 'Alimentos enlatados',
+final Product kayak = Product(
+    imagePath: "assets/images/kayak.jpg",
+    name: 'Kayak',
+    description: 'Deporte extremo',
     buttonText: 'Revisar',
-    backgroundColor: Color(0xFFFBE9EB),
+    backgroundColor: Color(0xFFE0DDFF),
+    price: '20',
+    cantidad: '1',
+    productInfo:
+        "Disponible en Piedra de Vapor, clases, disponible para todo publico");
+
+final Product malacatos = Product(
+    imagePath: "assets/images/malacatos.jpg",
+    name: 'Hospedaje',
+    description: 'Hosterias y hoteles',
+    buttonText: 'Revisar',
+    backgroundColor: Color(0xFFE0DDFF),
     price: '18',
     cantidad: '24',
-    productInfo: "Enlatados \n"
-        "Listo para calentar y servir"
-);
+    productInfo: "Hosteria \n"
+        "Areas verdes, hospedaje, piscina. \n"
+        "Ubicado en la via al Achiote");

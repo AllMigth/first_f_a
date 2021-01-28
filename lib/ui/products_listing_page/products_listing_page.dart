@@ -12,7 +12,7 @@ class ProductsListingPage extends StatelessWidget{
     return Scaffold(
       appBar: AppBar(
           title: Text(
-            'Emprendedores Pichincha',
+            'Puerto Quito',
             style: GoogleFonts.aBeeZee(),
           ),
           elevation: 50,
@@ -23,12 +23,12 @@ class ProductsListingPage extends StatelessWidget{
           ),
 
         actions: <Widget>[
-          Padding(
+          /* Padding(
             padding: const EdgeInsets.all(15),
             child: Icon(
                 Icons.menu
             )
-          ),
+          ), */
         ],
       ),
       body: SingleChildScrollView(
@@ -37,16 +37,16 @@ class ProductsListingPage extends StatelessWidget{
             //TopBar(), //HERE WE CALL THE CLASS, put the widgets like this. THAT'S AWESOME,
             RightImageProductItemWidget(
                 screenHeight: screenHeight,
-                product: pixel,
+                product: malacatos,
             ),
             LeftImageProductItemWidget(
               screenHeight: screenHeight,
-              product: stadia,
+              product: kayak,
             ),
             TwoProductsItemWidget(
               screenHeight: screenHeight,
-              product1: pixelStand,
-              product2: dayDreamview,
+              product1: balnearios,
+              product2: lugaresTuristicos,
             ),
             /*RedButton(
                 buttonText: "View all"
