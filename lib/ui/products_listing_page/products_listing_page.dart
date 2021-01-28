@@ -5,12 +5,12 @@ import 'left_image_product_item_widget.dart';
 import 'right_image_product_item_widget.dart';
 import 'two_products_item_widget.dart';
 
-class ProductsListingPage extends StatelessWidget{
+class ProductsListingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      appBar: AppBar(
+        appBar: AppBar(
           title: Text(
             'Puerto Quito',
             style: GoogleFonts.aBeeZee(),
@@ -21,40 +21,37 @@ class ProductsListingPage extends StatelessWidget{
             padding: const EdgeInsets.all(12),
             child: Image.asset("assets/images/softyon.png"),
           ),
-
-        actions: <Widget>[
-          /* Padding(
-            padding: const EdgeInsets.all(15),
-            child: Icon(
-                Icons.menu
-            )
-          ), */
-        ],
-      ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            //TopBar(), //HERE WE CALL THE CLASS, put the widgets like this. THAT'S AWESOME,
-            RightImageProductItemWidget(
+        ),
+        /* actions: <Widget>[
+          Padding(
+              padding: const EdgeInsets.all(15),
+              child: Icon(
+                Icons.menu,
+              )),
+        ], */
+        body: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              //TopBar(), //HERE WE CALL THE CLASS, put the widgets like this. THAT'S AWESOME,
+              RightImageProductItemWidget(
                 screenHeight: screenHeight,
                 product: malacatos,
-            ),
-            LeftImageProductItemWidget(
-              screenHeight: screenHeight,
-              product: kayak,
-            ),
-            TwoProductsItemWidget(
-              screenHeight: screenHeight,
-              product1: balnearios,
-              product2: lugaresTuristicos,
-            ),
-            /*RedButton(
+              ),
+              LeftImageProductItemWidget(
+                screenHeight: screenHeight,
+                product: kayak,
+              ),
+              TwoProductsItemWidget(
+                screenHeight: screenHeight,
+                product1: balnearios,
+                product2: lugaresTuristicos,
+              ),
+              /*RedButton(
                 buttonText: "View all"
             ),*/
-          ],
-        ),
-      ),
-    );
+            ],
+          ),
+        ));
   }
 }
 /*

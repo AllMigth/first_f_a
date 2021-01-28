@@ -45,9 +45,10 @@ final Product rutasDeAventura = Product(
     name: 'Rutas de aventura',
     description: 'Proteccion asegurada',
     buttonText: '',
-    backgroundColor: Color(0xFFE0DDFF),
+    backgroundColor: Color(0xFFF5F5F5),
     price: '3',
-    productInfo: "Disponible en Piedra de Vapor, clases, disponible para todo publico");
+    productInfo:
+        "Disponible en Piedra de Vapor, clases, disponible para todo publico");
 
 final Product lugaresTuristicos = Product(
     imagePath: "assets/images/AYACA.png",
@@ -61,10 +62,10 @@ final Product lugaresTuristicos = Product(
 
 final Product balnearios = Product(
     imagePath: "assets/images/balnearios.jpg",
-    name: 'Balnearios',
-    description: 'Nueva presentacion',
+    name: 'Casacada Azul',
+    description: 'Disponible',
     buttonText: 'Revisar',
-    backgroundColor: Color(0xFFFBE9EB),
+    backgroundColor: Color(0xFFF5F5F5),
     price: '18',
     cantidad: '24',
     productInfo: "Lasana/Hornado \n enlatados de consumo rapido"
@@ -75,7 +76,7 @@ final Product kayak = Product(
     name: 'Kayak',
     description: 'Deporte extremo',
     buttonText: 'Revisar',
-    backgroundColor: Color(0xFFE0DDFF),
+    backgroundColor: Color(0xFFF5F5F5),
     price: '20',
     cantidad: '1',
     productInfo:
@@ -86,7 +87,7 @@ final Product malacatos = Product(
     name: 'Hospedaje',
     description: 'Hosterias y hoteles',
     buttonText: 'Revisar',
-    backgroundColor: Color(0xFFE0DDFF),
+    backgroundColor: Color(0xFFF5F5F5),
     price: '18',
     cantidad: '24',
     productInfo: "Hosteria \n"

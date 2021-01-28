@@ -4,20 +4,19 @@ import 'package:puertoquito/widgets/fade_page_route.dart';
 import '../../models/product.dart';
 
 class VerticaProductItemWidget extends StatelessWidget {
-
   final Product product;
-  final screenHeight; 
+  final screenHeight;
 
-  const VerticaProductItemWidget({Key key, this.product, this.screenHeight}) : super(key: key);
+  const VerticaProductItemWidget({Key key, this.product, this.screenHeight})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         Navigator.push(
           context,
-          FadePageRoute(widget: ProductDetailPage(
-              product: product)),
+          FadePageRoute(widget: ProductDetailPage(product: product)),
         );
       },
       child: Container(
@@ -26,27 +25,27 @@ class VerticaProductItemWidget extends StatelessWidget {
           children: <Widget>[
             Image.asset(
               product.imagePath,
-              height: screenHeight * 0.17,
+              height: screenHeight * 0.13,
+            ),
+            SizedBox(
+              height: 5,
+            ),
+            Text(
+              product.name,
+              style: TextStyle(
+                fontWeight: FontWeight.w800,
+                color: Color(0xFF383843),
+                fontSize: 16,
               ),
-              SizedBox(
-                height: 5,
+            ),
+            Text(
+              product.description,
+              style: TextStyle(
+                fontWeight: FontWeight.w800,
+                color: Color(0xFF383843),
+                fontSize: 9,
               ),
-              Text(
-                product.name,
-                style: TextStyle(
-                  fontWeight: FontWeight.w800,
-                  color: Color(0xFF383843),
-                  fontSize: 16,
-                  ),
-              ),
-              Text(
-                product.description,
-                style: TextStyle(
-                  fontWeight: FontWeight.w800,
-                  color: Color(0xFF383843),
-                  fontSize: 9,
-                  ),
-              ),
+            ),
           ],
         ),
       ),

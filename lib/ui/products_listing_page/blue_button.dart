@@ -9,18 +9,17 @@ class BlueButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
+      onPressed: () {},
       child: Text(
         product.buttonText,
         style: TextStyle(
-          color: Color(0xFFF5F5F5),
-          fontWeight: FontWeight.w600,
-          fontSize: 12
-        ),
+            color: Color(0xFFF5F5F5),
+            fontWeight: FontWeight.w600,
+            fontSize: 12),
       ),
       color: Color(0xFF0000FF),
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-            Radius.circular(30)),
+        borderRadius: BorderRadius.all(Radius.circular(30)),
       ),
     );
   }

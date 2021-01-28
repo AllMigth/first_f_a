@@ -13,18 +13,17 @@ class LeftImageProductItemWidget extends StatelessWidget {
   final screenHeight;
   final Product product;
 
-  const LeftImageProductItemWidget({Key key, this.screenHeight, this.product}) :
-        super(key: key);
+  const LeftImageProductItemWidget({Key key, this.screenHeight, this.product})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       //ADD GESTURE DETECTOR FOR NAVIGATE, SIMPLE
-      onTap: (){
+      onTap: () {
         Navigator.push(
-            context,
-            FadePageRoute(widget: ProductDetailPage(
-                product: product)),
+          context,
+          FadePageRoute(widget: ProductDetailPage(product: product)),
         );
       },
       child: Container(
@@ -36,10 +35,10 @@ class LeftImageProductItemWidget extends StatelessWidget {
             Expanded(
               flex: 5,
               child: Hero(
-                  tag: product.name,
-                  child: Image.asset(product.imagePath),
+                tag: product.name,
+                child: Image.asset(product.imagePath),
               ),
-        ),
+            ),
             Expanded(
               flex: 4,
               child: Padding(
@@ -51,26 +50,23 @@ class LeftImageProductItemWidget extends StatelessWidget {
                     Text(
                       product.name,
                       style: TextStyle(
-                      fontSize: 19,
-                      fontWeight: FontWeight.w800,
-                    ),
-//                  style: GoogleFonts.pacifico(
-//                    fontSize: 19,
-//                    fontWeight: FontWeight.w800,
+                        fontSize: 19,
+                        fontWeight: FontWeight.w800,
+                      ),
                     ),
                     Text(
                       product.description,
                       style: TextStyle(
-                        fontSize: 9,
-                        fontWeight: FontWeight.w900,
-                        color: Color(0xFF909090)
-                      ),
+                          fontSize: 9,
+                          fontWeight: FontWeight.w900,
+                          color: Color(0xFF909090)),
                     ),
                     SizedBox(
                       height: 10,
                     ),
                     BlueButton(
-                      product: product,)//Button called here
+                      product: product,
+                    ) //Button called here
                   ],
                 ),
               ),

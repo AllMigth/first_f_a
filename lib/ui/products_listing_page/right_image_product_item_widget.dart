@@ -11,16 +11,16 @@ class RightImageProductItemWidget extends StatelessWidget {
   final screenHeight;
   final Product product;
 
-  const RightImageProductItemWidget({Key key, this.screenHeight, this.product}) :
-        super(key: key);
+  const RightImageProductItemWidget({Key key, this.screenHeight, this.product})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
-        Navigator.push(context, FadePageRoute(widget: ProductDetailPage(
-              product: product)
-        ),
+      onTap: () {
+        Navigator.push(
+          context,
+          FadePageRoute(widget: ProductDetailPage(product: product)),
         );
       },
       child: Container(
@@ -30,7 +30,7 @@ class RightImageProductItemWidget extends StatelessWidget {
         child: Row(
           children: <Widget>[
             Expanded(
-              flex: 4,
+              flex: 3,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,25 +38,28 @@ class RightImageProductItemWidget extends StatelessWidget {
                   Text(
                     product.name,
                     style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
+                  SizedBox(
+                    height: 10,
                   ),
-                  SizedBox(height: 10,),
-                  BlueButton(product: product,)//Button called here
+                  BlueButton(
+                    product: product,
+                  ) //Button called here
                 ],
               ),
             ),
             Expanded(
-              flex: 7,
+              flex: 6,
               child: Stack(
                 children: <Widget>[
                   Positioned(
-                    bottom: -35,
-                    top: 0,
+                    bottom: 10,
+                    top: 70,
                     child: Transform.rotate(
-                    angle: 0,
-                    child: Image.asset(product.imagePath)),
+                        angle: 0, child: Image.asset(product.imagePath)),
                   ),
                 ],
               ),

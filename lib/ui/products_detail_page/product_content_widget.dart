@@ -5,11 +5,11 @@ import 'icon_title_widget.dart';
 import 'product_detail_top_bar.dart';
 
 class ProductContentWidget extends StatelessWidget {
-
   final Product product;
   final screenHeight;
 
-  const ProductContentWidget({Key key, this.product, this.screenHeight}) : super(key: key);
+  const ProductContentWidget({Key key, this.product, this.screenHeight})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -23,29 +23,28 @@ class ProductContentWidget extends StatelessWidget {
           Hero(
             tag: product.name,
             child: Image.asset(
-              product.imagePath, 
-              height: screenHeight * 0.35,),
+              product.imagePath,
+              height: screenHeight * 0.35,
+            ),
           ),
           Row(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-              Text(
+            children: <Widget>[
+              /* Text(
                 "Primera compra*",
                 style: TextStyle(
                   color: Color(0xFF909090),
                   fontSize: 15,
                   fontWeight: FontWeight.w900,
-                ),
-              ),
+                ), */
+
               RichText(
                 text: TextSpan(children: [
-                    TextSpan(
-                      text: "\$",
-                      style: TextStyle(
-                          color: Color(0xFF0000FF),
-                          fontSize: 12),
-                      ),
+                  TextSpan(
+                    text: "\$",
+                    style: TextStyle(color: Color(0xFF0000FF), fontSize: 12),
+                  ),
                   TextSpan(
                     text: "${product.price}",
                     style: TextStyle(
@@ -64,13 +63,12 @@ class ProductContentWidget extends StatelessWidget {
           Row(
             children: <Widget>[
               Text(
-                  product.name.replaceAll("\n"," ")+"\t\t\t\t",
-                  style: TextStyle(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 19.0,
-                  ),
+                product.name.replaceAll("\n", " ") + "\t\t\t\t",
+                style: TextStyle(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 19.0,
+                ),
               ),
-
               Image.asset("assets/images/softyon.png", height: 20),
             ],
           ),
@@ -88,7 +86,6 @@ class ProductContentWidget extends StatelessWidget {
           SizedBox(
             height: 5,
           ),
-          
           Divider(
             color: Color(0xFFECECEC),
             thickness: 3,
@@ -99,20 +96,18 @@ class ProductContentWidget extends StatelessWidget {
             children: <Widget>[
               RedButton(
                 buttonText: "Visitar",
-
               ),
               Spacer(),
-               Material(
-                 elevation: 4,
-                 color: Colors.white,
-                 shape: CircleBorder(),
-                  child: Icon(
-                     Icons.add,
-                      size: 35,
-                      color: Color(0xFF0000FF),
-
-                  ),
+              Material(
+                elevation: 4,
+                color: Colors.white,
+                shape: CircleBorder(),
+                child: Icon(
+                  Icons.add,
+                  size: 35,
+                  color: Color(0xFF0000FF),
                 ),
+              ),
             ],
           )
         ],
