@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:puertoquito/ui/products_detail_page/product_detail_page.dart';
+import 'package:puertoquito/widgets/fade_page_route.dart';
 import '../../models/product.dart';
 
 class BlueButton extends StatelessWidget {
@@ -9,7 +11,12 @@ class BlueButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlatButton(
-      onPressed: () {},
+      onPressed: () {
+        Navigator.push(
+          context,
+          FadePageRoute(widget: ProductDetailPage(product: product)),
+        );
+      },
       child: Text(
         product.buttonText,
         style: TextStyle(

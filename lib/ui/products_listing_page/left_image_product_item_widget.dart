@@ -27,8 +27,8 @@ class LeftImageProductItemWidget extends StatelessWidget {
         );
       },
       child: Container(
-        padding: const EdgeInsets.only(left: 32), //Text aligment here
-        height: screenHeight * 0.25,
+        padding: const EdgeInsets.only(left: 25), //Text aligment here
+        height: screenHeight * 0.18,
         color: product.backgroundColor,
         child: Row(
           children: <Widget>[
@@ -42,7 +42,7 @@ class LeftImageProductItemWidget extends StatelessWidget {
             Expanded(
               flex: 4,
               child: Padding(
-                padding: const EdgeInsets.only(left: 40.0),
+                padding: const EdgeInsets.only(left: 20.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,

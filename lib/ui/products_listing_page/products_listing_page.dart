@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:puertoquito/models/product.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:puertoquito/ui/products_listing_page/intro.dart';
 import 'left_image_product_item_widget.dart';
 import 'right_image_product_item_widget.dart';
 import 'two_products_item_widget.dart';
@@ -33,6 +34,10 @@ class ProductsListingPage extends StatelessWidget {
           child: Column(
             children: <Widget>[
               //TopBar(), //HERE WE CALL THE CLASS, put the widgets like this. THAT'S AWESOME,
+              IntroWidget(
+                screenHeight: screenHeight,
+                product: presentationProduct,
+              ),
               RightImageProductItemWidget(
                 screenHeight: screenHeight,
                 product: malacatos,

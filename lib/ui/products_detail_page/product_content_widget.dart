@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:puertoquito/models/product.dart';
 import 'package:puertoquito/widgets/red_button.dart';
-import 'icon_title_widget.dart';
-import 'product_detail_top_bar.dart';
 
 class ProductContentWidget extends StatelessWidget {
   final Product product;

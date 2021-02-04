@@ -93,3 +93,11 @@ final Product malacatos = Product(
     productInfo: "Hosteria \n"
         "Areas verdes, hospedaje, piscina. \n"
         "Ubicado en la via al Achiote");
+
+final Product presentationProduct = Product(
+    imagePath: "assets/images/malacatos.jpg",
+    name: 'Bienvenido',
+    description:
+        'Esta app te mostrara algunos lugares de Puerto Quito a los que puedes acudir para solucionar tus asuntos.',
+    buttonText: 'Desliza hacia abajo para descubrir',
+    backgroundColor: Color(0xFFF5F5F5));
