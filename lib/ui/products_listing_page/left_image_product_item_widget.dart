@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:puertoquito/ui/products_detail_page/product_content_widget.dart';
 import 'package:puertoquito/ui/products_detail_page/product_detail_page.dart';
 import 'package:puertoquito/ui/products_listing_page/blue_button.dart';
 import 'package:puertoquito/widgets/fade_page_route.dart';
+import 'package:velocity_x/velocity_x.dart';
 import '../../models/product.dart';
 /*
 * THIS CLASS IS FOR THE FIRST PRODUCT
@@ -47,13 +46,9 @@ class LeftImageProductItemWidget extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
-                    Text(
-                      product.name,
-                      style: TextStyle(
-                        fontSize: 19,
-                        fontWeight: FontWeight.w800,
-                      ),
-                    ),
+                    VStack([
+                      product.name.text.xl3.gray500.make().shimmer(),
+                    ]),
                     Text(
                       product.description,
                       style: TextStyle(

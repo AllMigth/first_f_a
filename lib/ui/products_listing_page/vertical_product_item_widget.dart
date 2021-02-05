@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:puertoquito/ui/products_detail_page/product_detail_page.dart';
 import 'package:puertoquito/widgets/fade_page_route.dart';
+import 'package:velocity_x/velocity_x.dart';
 import '../../models/product.dart';
 
 class VerticaProductItemWidget extends StatelessWidget {
@@ -30,19 +31,14 @@ class VerticaProductItemWidget extends StatelessWidget {
             SizedBox(
               height: 5,
             ),
-            Text(
-              product.name,
-              style: TextStyle(
-                fontWeight: FontWeight.w800,
-                color: Color(0xFF383843),
-                fontSize: 16,
-              ),
-            ),
+            VStack([
+              product.name.text.xl3.black.maxLines(1).makeCentered().shimmer(),
+            ]),
             Text(
               product.description,
               style: TextStyle(
                 fontWeight: FontWeight.w800,
-                color: Color(0xFF383843),
+                color: Color(0xFF909090),
                 fontSize: 9,
               ),
             ),

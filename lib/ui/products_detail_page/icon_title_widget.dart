@@ -22,7 +22,8 @@ class IconTitleWidget extends StatelessWidget {
           ),
           Text(
             title,
-            style: TextStyle(color: Color(0xFFDA1D21), fontSize: 10, height: 15),
+            style:
+                TextStyle(color: Color(0xFFDA1D21), fontSize: 15, height: 15),
           )
         ],
       ),

@@ -23,17 +23,10 @@ class ProductsListingPage extends StatelessWidget {
             child: Image.asset("assets/images/softyon.png"),
           ),
         ),
-        /* actions: <Widget>[
-          Padding(
-              padding: const EdgeInsets.all(15),
-              child: Icon(
-                Icons.menu,
-              )),
-        ], */
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              //TopBar(), //HERE WE CALL THE CLASS, put the widgets like this. THAT'S AWESOME,
+              //RE WE CALL THE CLASS, put the widgets like this. THAT'S AWESOME,
               IntroWidget(
                 screenHeight: screenHeight,
                 product: presentationProduct,

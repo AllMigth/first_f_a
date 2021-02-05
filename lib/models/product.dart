@@ -7,7 +7,8 @@ class Product {
       imagePath,
       price,
       productInfo,
-      cantidad;
+      cantidad,
+      precioEntrada;
   Color backgroundColor;
   Product(
       {this.name,
@@ -17,7 +18,8 @@ class Product {
       this.imagePath,
       this.price,
       this.productInfo,
-      this.cantidad});
+      this.cantidad,
+      this.precioEntrada});
 }
 
 final Product fiestasJulio = Product(
@@ -25,7 +27,7 @@ final Product fiestasJulio = Product(
     name: 'Fiesta de la Virgen del Carmen',
     description: 'Celebracion religiosa anual',
     buttonText: '',
-    backgroundColor: Color(0xFFF5F5F5),
+    //backgroundColor: Color(0xFFF5F5F5),
     price: '18',
     productInfo: "Desfiles, fuegos pirotecnicos, rifas de animales"
         "danzas, orquesta, etc.");
@@ -35,7 +37,7 @@ final Product comidaTipica = Product(
     name: 'Comida Tipica',
     description: 'Alimentos no perecibles',
     buttonText: '',
-    backgroundColor: Color(0xFFF5F5F5),
+    //backgroundColor: Color(0xFFF5F5F5),
     price: '18',
     productInfo: "Hayacas/Lasana  \n Deliciosos enlatados"
         "listo para calentar y servir");
@@ -45,7 +47,7 @@ final Product rutasDeAventura = Product(
     name: 'Rutas de aventura',
     description: 'Proteccion asegurada',
     buttonText: '',
-    backgroundColor: Color(0xFFF5F5F5),
+    //backgroundColor: Color(0xFFF5F5F5),
     price: '3',
     productInfo:
         "Disponible en Piedra de Vapor, clases, disponible para todo publico");
@@ -55,7 +57,7 @@ final Product lugaresTuristicos = Product(
     name: "Restauran D'Camy ",
     description: 'Diversion asegurada',
     buttonText: 'Ver',
-    backgroundColor: Color(0xFFF5F5F5),
+    //backgroundColor: Color(0xFFF5F5F5),
     price: '2',
     productInfo: "Majado/Hornado  \n Deliciosos enlatados"
         "listo para calentar y servir");
@@ -65,7 +67,7 @@ final Product balnearios = Product(
     name: 'Casacada Azul',
     description: 'Disponible',
     buttonText: 'Revisar',
-    backgroundColor: Color(0xFFF5F5F5),
+    //backgroundColor: Color(0xFFF5F5F5),
     price: '18',
     cantidad: '24',
     productInfo: "Lasana/Hornado \n enlatados de consumo rapido"
@@ -76,28 +78,30 @@ final Product kayak = Product(
     name: 'Kayak',
     description: 'Deporte extremo',
     buttonText: 'Revisar',
-    backgroundColor: Color(0xFFF5F5F5),
+    //backgroundColor: Color(0xFFF5F5F5),
     price: '20',
     cantidad: '1',
     productInfo:
         "Disponible en Piedra de Vapor, clases, disponible para todo publico");
 
 final Product malacatos = Product(
-    imagePath: "assets/images/malacatos.jpg",
-    name: 'Hospedaje',
-    description: 'Hosterias y hoteles',
-    buttonText: 'Revisar',
-    backgroundColor: Color(0xFFF5F5F5),
-    price: '18',
-    cantidad: '24',
-    productInfo: "Hosteria \n"
-        "Areas verdes, hospedaje, piscina. \n"
-        "Ubicado en la via al Achiote");
+  imagePath: "assets/images/malacatos.jpg",
+  name: 'Hosteria Malacatos',
+  description: 'Hosterias y hoteles',
+  buttonText: 'Revisar',
+  // backgroundColor: Color(0xFFF5F5F5),
+  price: '18',
+  productInfo: "\n"
+      "Areas verdes, hospedaje, piscina. \n"
+      "Ubicado en la via al Achiote a 3.5km",
+  precioEntrada: "Valor entrada: 3.5",
+);
 
 final Product presentationProduct = Product(
-    imagePath: "assets/images/malacatos.jpg",
-    name: 'Bienvenido',
-    description:
-        'Esta app te mostrara algunos lugares de Puerto Quito a los que puedes acudir para solucionar tus asuntos.',
-    buttonText: 'Desliza hacia abajo para descubrir',
-    backgroundColor: Color(0xFFF5F5F5));
+  imagePath: "assets/images/malacatos.jpg",
+  name: 'Bienvenido',
+  description:
+      'Esta app te mostrara algunos lugares de Puerto Quito a los que puedes acudir para solucionar tus asuntos.',
+  buttonText: 'Desliza hacia abajo para descubrir',
+  //backgroundColor: Color(0xFFF5F5F5)
+);
